@@ -21,4 +21,15 @@ func main() {
 
 	i += 5 // i = i + 5
 	fmt.Println(i)
+
+	var j = i
+	j++
+	fmt.Println(j)
+	j++
+	fmt.Println(j)
+
+	j--
+	fmt.Println(j)
+	j--
+	fmt.Println(j)
 }
