@@ -7,6 +7,10 @@ type Customer struct {
 	Age           int
 }
 
+func (customer Customer) sayHello(name string) {
+	fmt.Println("Helllo", name, "my name is", customer.Name)
+}
+
 func main() {
 	var alfa Customer
 
@@ -27,4 +31,6 @@ func main() {
 
 	dyaksa := Customer{"Dyaksa", "Indonesia", 28}
 	fmt.Println(dyaksa)
+
+	dyaksa.sayHello("Alfa")
 }
